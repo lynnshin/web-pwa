@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>PWA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="shortcut icon" href="TemplateData/favicon-pwa.ico">
+		<link rel="manifest" href="/manifest.json">
+
+		<!-- Add to home screen for Safari on iOS -->
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="apple-mobile-web-app-title" content="PWA">
+	    <link rel="apple-touch-icon" href="images/icons/logo - 152.png">
+
+	    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyAKcZhB_8s6wEpCKnVmZRqOWLQX27SQYNQ",
+		    authDomain: "finalpwa.firebaseapp.com",
+		    databaseURL: "https://finalpwa.firebaseio.com",
+		    projectId: "finalpwa",
+		    storageBucket: "finalpwa.appspot.com",
+		    messagingSenderId: "4628908485"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+		<script src="scripts/app.js"></script>
+	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+					<header id="header">
+						<p style=" font-size: 50pt; font-weight:bold; ">PWA</p>
+						<p>陳筱雯 &nbsp;&bull;&nbsp; 杜宜庭 &nbsp;&bull;&nbsp; 林奕昕 &nbsp;&bull;&nbsp; 歐育綺</p>
+						<nav>
+							<ul>
+								<li><a href="game.html" class="icon fa-gamepad"><span class="label">Game</span></a></li>
+								<li><a href="#" class="icon fa-bullhorn"><span class="label">Knowledge</span></a></li>
+								<li><a href="#" class="icon fa-users"><span class="label">Chat</span></a></li>
+								<li><a href="#" class="icon fa-book"><span class="label">Information</span></a></li>
+								<li><a href="#" class="icon fa-envelope-o"><span class="label">smile</span></a></li>
+							</ul>
+						</nav>
+					</header>
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "game3",
+"dataUrl": "onweb.data.unityweb",
+"asmCodeUrl": "onweb.asm.code.unityweb",
+"asmMemoryUrl": "onweb.asm.memory.unityweb",
+"asmFrameworkUrl": "onweb.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
